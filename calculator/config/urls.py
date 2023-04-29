@@ -18,8 +18,9 @@ from django.contrib import admin
 from django.urls import path
 from banks.views import form_calculator
 
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', form_calculator, name='form_calculator'),
-    # path('count/', count_mortgage, name='count'),
+
 ]
