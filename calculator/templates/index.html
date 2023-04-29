@@ -1,0 +1,11 @@
+<form action="" method="post" class="form">
+    {% csrf_token %}
+        
+    {{ form.as_p }}
+    <input type="submit" class="order" value="Cчитать">
+</form>
+
+
+{% for bank in bank_offer %}
+    <h5>{{ bank.0 }} {{ bank.1 }} {{ bank.2 }}</h5>
+{% endfor %}
